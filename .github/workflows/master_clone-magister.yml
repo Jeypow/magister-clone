@@ -52,5 +52,5 @@ jobs:
         with:
           app-name: 'Clone-Magister'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_875FBD1CEB1F44F38FF931DCB8857874 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_7BC825EEC764487D964BC34838DDCBF4 }}
           package: .
