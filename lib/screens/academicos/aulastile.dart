@@ -1,0 +1,12 @@
+import 'package:firebase_core/firebase_core.dart';
+import 'package:flutter/material.dart';
+import 'package:magister_clone/screens/home/home.dart';
+import 'package:magister_clone/screens/home/navegacao.dart';
+import 'package:magister_clone/screens/whapper.dart';
+import 'package:magister_clone/services/auth.dart';
+import 'package:magister_clone/widgets/textos.dart';
+import 'package:provider/provider.dart';
+import 'package:magister_clone/models/users.dart';
+import 'package:magister_clone/screens/academicos/horarioslist.dart';
+import 'package:magister_clone/services/horariosdb.dart';
+import 'package:magister_clone/screens/academicos/horarios.dart';

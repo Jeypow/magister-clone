@@ -13,7 +13,7 @@ class TextContainer extends StatelessWidget {
         color: Color.fromARGB(255, 0, 156, 247),
       ),
       width: double.infinity,
-      margin: EdgeInsets.only(left: 20),
+      margin: EdgeInsets.only(left: 22),
       padding: const EdgeInsets.all(20),
       child: Text(
         texto,

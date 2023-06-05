@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:magister_clone/alert.dart';
-import 'package:magister_clone/home.dart';
+import 'package:magister_clone/screens/home/home.dart';
 
 class NavegPage extends StatefulWidget {
   NavegPage({Key? key}) : super(key: key);

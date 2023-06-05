@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "677685889327",
+    "project_id": "magister-clone-bd4db",
+    "storage_bucket": "magister-clone-bd4db.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:677685889327:android:abdc8eedb044356ea3f9da",
+        "android_client_info": {
+          "package_name": "com.example.magister_clone"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "677685889327-egcn4ih17spl0pt1gsmdo0p323avdhm9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB9Gt4kzkZQcjaUEv3T3JboUQ6vSWWAWdU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "677685889327-egcn4ih17spl0pt1gsmdo0p323avdhm9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

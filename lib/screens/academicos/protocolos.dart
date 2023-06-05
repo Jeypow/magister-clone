@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:magister_clone/widgets/protocoloD.dart';
+import 'package:provider/provider.dart';
 
 class ProtocolosPage extends StatelessWidget {
   @override

@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:magister_clone/recursos.dart';
-
-import 'Academicos.dart';
-import 'horarios.dart';
+import 'package:magister_clone/screens/academicos/academicos.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class unitwebPage extends StatelessWidget {

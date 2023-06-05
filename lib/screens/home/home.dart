@@ -1,14 +1,13 @@
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
-import 'package:magister_clone/Academicos.dart';
-import 'package:magister_clone/perfil.dart';
+import 'package:magister_clone/screens/academicos/academicos.dart';
+import 'package:magister_clone/screens/Perfil/perfil.dart';
 import 'package:magister_clone/recursos.dart';
 import 'package:magister_clone/unit-web.dart';
 
-import 'informacoes.dart';
+import '../../informacoes.dart';
 
 class HomeScreen extends StatefulWidget {
-  const HomeScreen({Key? key}) : super(key: key);
   @override
   _HomeScreenStata createState() => _HomeScreenStata();
 }
@@ -29,7 +28,8 @@ class _HomeScreenStata extends State<HomeScreen> {
         backgroundColor: Colors.transparent,
         child: CircleAvatar(
           radius: 30,
-          backgroundImage: AssetImage('assets/images/perfil.png'),
+          backgroundImage: NetworkImage(
+              'https://raw.githubusercontent.com/Jeypow/magister-clone/master/assets/images/perfil.png'),
         ),
       ),
       floatingActionButtonLocation: FloatingActionButtonLocation.endTop,

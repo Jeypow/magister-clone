@@ -1,11 +1,29 @@
 import 'package:flutter/material.dart';
+import 'package:magister_clone/screens/academicos/notas_faltaslist.dart';
 import 'package:magister_clone/widgets/textos.dart';
+import 'package:flutter/material.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:magister_clone/services/aulasdb.dart';
+import 'package:provider/provider.dart';
+import 'package:firebase_core/firebase_core.dart';
+import 'package:flutter/material.dart';
+import 'package:magister_clone/screens/home/home.dart';
+import 'package:magister_clone/screens/home/navegacao.dart';
+import 'package:magister_clone/screens/whapper.dart';
+import 'package:magister_clone/services/auth.dart';
+import 'package:magister_clone/widgets/textos.dart';
+import 'package:provider/provider.dart';
+import 'package:magister_clone/models/users.dart';
+import 'package:magister_clone/screens/academicos/horarioslist.dart';
+import 'package:magister_clone/services/horariosdb.dart';
+import 'package:magister_clone/screens/academicos/horarios.dart';
 
 class NotasFaltasPage extends StatelessWidget {
   const NotasFaltasPage({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
+    /*
     // Cria uma lista de horários fictícios
     final unidade1 = [
       {
@@ -41,7 +59,7 @@ class NotasFaltasPage extends StatelessWidget {
         'disciplina': 'TEORIA DOS GRAFOS - E01',
       },
     ];
-
+*/
     return Scaffold(
       appBar: AppBar(
         title: const Text('Notas e Faltas'),
@@ -50,17 +68,18 @@ class NotasFaltasPage extends StatelessWidget {
         backgroundColor: Colors.white,
       ),
       body: Container(
-        decoration: BoxDecoration(
-          gradient: LinearGradient(
-            begin: Alignment.topLeft,
-            end: Alignment.bottomRight,
-            colors: [
-              const Color(0xFF234E98),
-              const Color(0xFF1D3060),
-            ],
+          decoration: BoxDecoration(
+            gradient: LinearGradient(
+              begin: Alignment.topLeft,
+              end: Alignment.bottomRight,
+              colors: [
+                const Color(0xFF234E98),
+                const Color(0xFF1D3060),
+              ],
+            ),
           ),
-        ),
-        child: Padding(
+          child: notas_faltaslist()),
+      /*
           padding: const EdgeInsets.all(16.0),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
@@ -162,9 +181,13 @@ class NotasFaltasPage extends StatelessWidget {
                 ),
               ),
             ],
+         
           ),
+          
         ),
+     
       ),
+   */
     );
   }
 }

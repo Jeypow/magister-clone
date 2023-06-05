@@ -1,12 +1,18 @@
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
+import 'package:magister_clone/screens/academicos/aulaslist.dart';
+import 'package:magister_clone/services/auth.dart';
+import 'package:magister_clone/services/horariosdb.dart';
 import 'package:magister_clone/widgets/textos.dart';
+import 'package:provider/provider.dart';
+import 'package:magister_clone/services/database.dart';
+import 'package:magister_clone/screens/academicos/horarioslist.dart';
 
 class HorariosPage extends StatelessWidget {
-  const HorariosPage({Key? key}) : super(key: key);
-
   @override
   Widget build(BuildContext context) {
     // Cria uma lista de horários fictícios
+    /*
     final horarios = [
       {
         'campus': 'Campus Aracaju -Farolândia',
@@ -101,98 +107,104 @@ class HorariosPage extends StatelessWidget {
         'disciplina': 'Ciências'
       },
     ];
-
-    return Scaffold(
-      appBar: AppBar(
-        title: const Text('Horários'),
-        titleTextStyle: TextStyle(color: Colors.blue[900], fontSize: 22),
-        iconTheme: IconThemeData(color: Colors.blue[900]),
-        backgroundColor: Colors.white,
-      ),
-      body: Container(
-        decoration: BoxDecoration(
-          gradient: LinearGradient(
-            begin: Alignment.topLeft,
-            end: Alignment.bottomRight,
-            colors: [
-              const Color(0xFF234E98),
-              const Color(0xFF1D3060),
-            ],
-          ),
+*/
+    return Container(
+      child: Scaffold(
+        appBar: AppBar(
+          title: const Text('Horários'),
+          titleTextStyle: TextStyle(color: Colors.blue[900], fontSize: 22),
+          iconTheme: IconThemeData(color: Colors.blue[900]),
+          backgroundColor: Colors.white,
         ),
-        child: Padding(
-          padding: const EdgeInsets.all(16.0),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              SizedBox(height: 16),
-              Expanded(
-                child: ListView.builder(
-                  itemCount: horarios.length,
-                  itemBuilder: (BuildContext context, int index) {
-                    final horario = horarios[index];
-                    final horario2 = horarios2[index];
-
-                    return Padding(
-                      padding: const EdgeInsets.symmetric(vertical: 8.0),
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          TextContainer(
-                            texto:
-                                '${horario['data']} - ${horario['diaSemana']}',
-                          ),
-                          SizedBox(height: 10),
-                          textocinza(
-                            texto: '${horario['campus']}',
-                          ),
-                          SizedBox(height: 5),
-                          Row(
-                            children: [
-                              Expanded(
-                                flex: 1,
-                                child: hora(
-                                  texto: '${horario['hora']}',
-                                ),
-                              ),
-                              Expanded(
-                                flex: 2,
-                                child: textocenter(
-                                  subtitle:
-                                      ' BLOCO ${horario['bloco']} - SALA ${horario['sala']}',
-                                  aulas: '${horario['disciplina']}',
-                                ),
-                              ),
-                            ],
-                          ),
-                          SizedBox(height: 5),
-                          Row(
-                            children: [
-                              Expanded(
-                                flex: 1,
-                                child: hora(
-                                  texto: '${horario2['hora']}',
-                                ),
-                              ),
-                              Expanded(
-                                flex: 2,
-                                child: textocenter(
-                                  subtitle:
-                                      ' BLOCO ${horario2['bloco']} - SALA ${horario2['sala']}',
-                                  aulas: '${horario2['disciplina']}',
-                                ),
-                              ),
-                            ],
-                          ),
-                        ],
-                      ),
-                    );
-                  },
-                ),
+        body: Container(
+            decoration: BoxDecoration(
+              gradient: LinearGradient(
+                begin: Alignment.topLeft,
+                end: Alignment.bottomRight,
+                colors: [
+                  const Color(0xFF234E98),
+                  const Color(0xFF1D3060),
+                ],
               ),
-            ],
-          ),
-        ),
+            ),
+            //lista de aulas horarios
+            child: AulasList()),
+        /*
+            child: Padding(
+              padding: const EdgeInsets.all(16.0),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  SizedBox(height: 16),
+                  Expanded(
+                    child: ListView.builder(
+                      itemCount: horarios.length,
+                      itemBuilder: (BuildContext context, int index) {
+                        final horario = horarios[index];
+                        final horario2 = horarios2[index];
+            
+                        return Padding(
+                          padding: const EdgeInsets.symmetric(vertical: 8.0),
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              TextContainer(
+                                texto:
+                                    '${horario['data']} - ${horario['diaSemana']}',
+                              ),
+                              SizedBox(height: 10),
+                              textocinza(
+                                texto: '${horario['campus']}',
+                              ),
+                              SizedBox(height: 5),
+                              Row(
+                                children: [
+                                  Expanded(
+                                    flex: 1,
+                                    child: hora(
+                                      texto: '${horario['hora']}',
+                                    ),
+                                  ),
+                                  Expanded(
+                                    flex: 2,
+                                    child: textocenter(
+                                      subtitle:
+                                          ' BLOCO ${horario['bloco']} - SALA ${horario['sala']}',
+                                      aulas: '${horario['disciplina']}',
+                                    ),
+                                  ),
+                                ],
+                              ),
+                              SizedBox(height: 5),
+                              Row(
+                                children: [
+                                  Expanded(
+                                    flex: 1,
+                                    child: hora(
+                                      texto: '${horario2['hora']}',
+                                    ),
+                                  ),
+                                  Expanded(
+                                    flex: 2,
+                                    child: textocenter(
+                                      subtitle:
+                                          ' BLOCO ${horario2['bloco']} - SALA ${horario2['sala']}',
+                                      aulas: '${horario2['disciplina']}',
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ],
+                          ),
+                        );
+                      },
+                    ),
+                  ),
+                ],
+              ),
+            
+            ),
+          */
       ),
     );
   }

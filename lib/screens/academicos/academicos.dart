@@ -1,9 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:magister_clone/calculo_media.dart';
-import 'package:magister_clone/notas_faltas.dart';
-import 'package:magister_clone/protocolos.dart';
+import 'package:provider/provider.dart';
+import 'package:magister_clone/screens/academicos/horarios.dart';
+import 'package:magister_clone/screens/academicos/notas_faltas.dart';
+import 'package:magister_clone/screens/academicos/protocolos.dart';
+import 'package:magister_clone/screens/academicos/listprotocolo.dart';
+import 'package:magister_clone/services/auth.dart';
 
-import 'horarios.dart';
+import 'horarioslist.dart';
 
 class BoxItem extends StatelessWidget {
   final Widget child;

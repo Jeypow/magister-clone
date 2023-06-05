@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'Academicos.dart';
-import 'horarios.dart';
+import 'package:magister_clone/screens/academicos/academicos.dart';
 
 class wifiPage extends StatelessWidget {
   const wifiPage({

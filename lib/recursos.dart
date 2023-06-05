@@ -2,8 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:magister_clone/Avaliar.dart';
 import 'package:magister_clone/contato.dart';
 import 'package:magister_clone/wifi.dart';
-import 'Academicos.dart';
-import 'horarios.dart';
+import 'package:magister_clone/screens/academicos/academicos.dart';
 
 class RecursosPage extends StatelessWidget {
   const RecursosPage({
