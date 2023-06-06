@@ -24,7 +24,7 @@ Essas são as dependências necessárias para a criação desse projeto.
 
 Link da aplicação funcionando no Youtube.
 
-[youtube](https://www.google.com)
+[youtube](https://www.youtube.com/watch?v=Jt8U377QguE&ab_channel=MrJeypow)
 
 ## Telas
 

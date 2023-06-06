@@ -29,7 +29,7 @@ class _HomeScreenStata extends State<HomeScreen> {
         child: CircleAvatar(
           radius: 30,
           backgroundImage: NetworkImage(
-              'https://raw.githubusercontent.com/Jeypow/magister-clone/master/assets/images/perfil.png'),
+              'https://github.com/Jeypow/magister-clone/blob/master/assets/images/logo.png?raw=true'),
         ),
       ),
       floatingActionButtonLocation: FloatingActionButtonLocation.endTop,
