@@ -4,7 +4,22 @@ Este é um clone do aplicativo Magister da Universidade Tiradentes.
 
 ## Sobre
 
-O projeto foi desenvolvido em Flutter com Firebase para a criação de um aplicativo Android.
+O aplicativo Magister tem como objetivo auxiliar os alunos da Universidade
+Tiradentes com serviços e informações que podem ser facilmente acessados pelo
+telefone, tanto dentro quanto fora do campus.
+Após a matrícula na universidade, o aluno receberá uma carta com sua matrícula e
+senha, que serão usadas para fazer login no aplicativo. Uma vez logado, o aluno
+terá acesso ao seu horário de aulas, bem como informações importantes para o dia
+a dia, como o campus e a sala onde as aulas serão realizadas.
+O sistema está dividido em módulos, para que cada área de interesse do aluno
+possa ser facilmente compreendida. O módulo mais acessado pelo aluno é a área
+acadêmica, onde é possível visualizar horários, notas, faltas, calcular a média e
+protocolos. Além disso, o aplicativo fornece notificações para manter o aluno
+informado sobre eventos importantes.
+O Clone Magister é um sistema gratuito que só pode ser acessado pelos alunos da
+Universidade Tiradentes. Com a implementação dos requisitos funcionais, os
+usuários não precisarão mais se deslocar até o campus para obter essas
+informações importantes.
 
 ## Tecnologias utilizadas 
 
@@ -26,6 +41,11 @@ Link da aplicação funcionando no Youtube.
 
 [youtube](https://www.youtube.com/watch?v=Jt8U377QguE&ab_channel=MrJeypow)
 
+## Documentação
+
+
+[Magister documentação](https://drive.google.com/file/d/1C1IvlDU0ilYokjboR_9Bi7rDQKjC9bdB/view?usp=sharing)
+
 ## Telas
 
 
@@ -42,10 +62,6 @@ Link da aplicação funcionando no Youtube.
 <img src="https://raw.githubusercontent.com/Jeypow/magister-clone/master/assets/fotos-telas/recursos.png" alt="Descrição da imagem" width="300" height="altura">
 <img src="https://raw.githubusercontent.com/Jeypow/magister-clone/master/assets/fotos-telas/unitweb.png" alt="Descrição da imagem" width="300" height="altura">
 
-
-## Documentação
-
-A.
 
 
 
