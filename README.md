@@ -43,13 +43,6 @@ Link da aplicação funcionando no Youtube.
 <img src="https://raw.githubusercontent.com/Jeypow/magister-clone/master/assets/fotos-telas/unitweb.png" alt="Descrição da imagem" width="300" height="altura">
 
 
-
-
-
-![Exemplo de imagem](https://www.example.com/imagem.jpg)
-
-
-
 ## Documentação
 
 A.
