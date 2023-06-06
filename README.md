@@ -28,23 +28,33 @@ Link da aplicação funcionando no Youtube.
 
 ## Telas
 
-`![texto alternativo](URL da imagem)`.
+
+<img src="https://raw.githubusercontent.com/Jeypow/magister-clone/master/assets/fotos-telas/login.png" alt="Descrição da imagem" width="300" height="altura">
+<img src="https://raw.githubusercontent.com/Jeypow/magister-clone/master/assets/fotos-telas/home.png" alt="Descrição da imagem" width="300" height="altura">
+<img src="https://raw.githubusercontent.com/Jeypow/magister-clone/master/assets/fotos-telas/academicos.png" alt="Descrição da imagem" width="300" height="altura">
+<img src="https://raw.githubusercontent.com/Jeypow/magister-clone/master/assets/fotos-telas/horarios.png" alt="Descrição da imagem" width="300" height="altura">
+<img src="https://raw.githubusercontent.com/Jeypow/magister-clone/master/assets/fotos-telas/notas-faltas.png" alt="Descrição da imagem" width="300" height="altura">
+<img src="https://raw.githubusercontent.com/Jeypow/magister-clone/master/assets/fotos-telas/calculadora.png" alt="Descrição da imagem" width="300" height="altura">
+<img src="https://raw.githubusercontent.com/Jeypow/magister-clone/master/assets/fotos-telas/aviso.png" alt="Descrição da imagem" width="300" height="altura">
+<img src="https://raw.githubusercontent.com/Jeypow/magister-clone/master/assets/fotos-telas/informações.png" alt="Descrição da imagem" width="300" height="altura">
+<img src="https://raw.githubusercontent.com/Jeypow/magister-clone/master/assets/fotos-telas/perfil.png" alt="Descrição da imagem" width="300" height="altura">
+<img src="https://raw.githubusercontent.com/Jeypow/magister-clone/master/assets/fotos-telas/protocolo.png" alt="Descrição da imagem" width="300" height="altura">
+<img src="https://raw.githubusercontent.com/Jeypow/magister-clone/master/assets/fotos-telas/recursos.png" alt="Descrição da imagem" width="300" height="altura">
+<img src="https://raw.githubusercontent.com/Jeypow/magister-clone/master/assets/fotos-telas/unitweb.png" alt="Descrição da imagem" width="300" height="altura">
+
+
+
+
 
 ![Exemplo de imagem](https://www.example.com/imagem.jpg)
 
 
 
-## Estrutura-codigo
+## Documentação
 
 A.
 
 
 
-## Citações
 
-Você pode criar citações usando o sinal de maior que (>). Isso é útil para destacar citações ou blocos de texto.
-
-> Esta é uma citação.
-
-Isso é apenas uma introdução ao Markdown. Existem muitas outras funcionalidades que você pode explorar para criar documentos mais ricos e formatados. Espero que isso tenha sido útil!
 
